@@ -2,13 +2,15 @@ import wollok.game.*
 
 object manzana {
 
-	//Completar
+	method image()= "manzana.png"
+	method position() = game.at(4, 4)
 
 }
 
 object alpiste {
 
-	// Completar
+	method image()= "alpiste.png"
+	method position() = game.at(3, 3)
 
 }
 
