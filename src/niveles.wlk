@@ -39,6 +39,7 @@ object tutorial3 {
 		game.addVisual(pepita)
 		config.configurarTeclas()
 		config.configurarColisiones()
+		config.gravedad()
 	}
 
 }
@@ -74,6 +75,10 @@ object config {
 		})
 
 		keyboard.c().onPressDo({
+			if(game.uniqueCollider(pepita)==manzana or game.uniqueCollider(pepita)==alpiste){
+				pepita.come(game.uniqueCollider(pepita))
+				game.removeVisual(game.uniqueCollider(pepita))
+			}
 		})
 
 		

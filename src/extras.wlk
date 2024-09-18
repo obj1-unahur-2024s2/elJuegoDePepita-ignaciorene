@@ -8,6 +8,7 @@ object nido {
 
 	method teEncontro(algo){
 		algo.image("pepita-grande.png")
+		game.say(algo, "¡GANE!")
 	}
 }
 
@@ -27,6 +28,7 @@ object silvestre {
 
 	method teEncontro(algo){
 		algo.image("pepita-gris.png")
+		game.say(algo, "¡PERDI!")
 	}
 }
 

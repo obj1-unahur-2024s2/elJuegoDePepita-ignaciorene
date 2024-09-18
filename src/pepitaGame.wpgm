@@ -11,7 +11,7 @@ program PepitaGame {
 	game.boardGround("fondo2.jpg")
 	
 	// Hacer los arreglos para que pueda ejecutar tutorial1.iniciar()
-	tutorial2.iniciar()
+	tutorial3.iniciar()
 	config.configurarTeclas()
 	
 	

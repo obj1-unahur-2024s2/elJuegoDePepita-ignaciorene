@@ -18,6 +18,11 @@ object pepita {
 	method irA(nuevaPosicion) {
 		self.vola(position.distance(nuevaPosicion))
 		position = nuevaPosicion
+
+		if(self.estaCansada()){
+			self.image("pepita-gris.png")
+			game.say(self, "¡PERDI!")
+		}
 	}
 
 	method estaCansada() {
@@ -30,9 +35,12 @@ object pepita {
 
 	method caerGravedad(){
 		if(self.position().y()>0){
-			self.irA(self.position().down(1))
+			position=self.position().down(1)
+		}
+
+		if(self.estaCansada()){
+			self.image("pepita-gris.png")
 		}
 	}
-
 }
 
