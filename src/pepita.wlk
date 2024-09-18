@@ -40,6 +40,7 @@ object pepita {
 
 		if(self.estaCansada()){
 			self.image("pepita-gris.png")
+			game.say(self, "¡PERDI!")
 		}
 	}
 }
